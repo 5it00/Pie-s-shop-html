@@ -1,0 +1,64 @@
+body{
+    background-color: bisque;
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('images\\pattern.png');
+}
+#myheader{
+    background-color:violet;
+}
+nav{
+  width: 1000px;  
+  height: 50px;
+  margin: 0 auto 20px;
+}
+#leftside{
+    float: left;
+    width: 30%;
+    margin-bottom: 20px;
+}
+.searchbox{
+    padding: 10px;
+    width: 200px;
+    margin: 15px;
+}
+#master{
+    float: right;
+    width: 70%;
+    margin-bottom: 20px;
+}
+footer{
+    clear: both;
+    width: 100%;
+}
+table , td,th{
+    padding: 5px;
+    border: 1px solid =black;
+    border-collapse: collapse;
+}
+header,
+nav,
+section,
+aside,
+main,
+article,
+footer,figure{
+display: block;
+}
+nav>ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+nav>ul>li{
+float: left;
+}
+nav>ul>li>a{
+display: block;
+text-align: center;
+text-decoration: none;
+padding: 16px;
+color: white;
+font-weight: bold;
+}
