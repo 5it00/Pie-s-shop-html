@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>welcome sweety</title>
+    <meta charset="utf-8">
+    <meta name = "author" content=" KHITAM SALIM">
+    <meta name = "description" content=" for sweets store">
+    <meta name = "viewpar" content="  wtever">
+    <link rel="icon" type="imge\png" href="favicon.png">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header id = "myheader">
+        <nav>
+            <ul>
+               <li>   <img src="images\pie.png" height="50"/></li>
+               <li>   <a href="index.html"> Home</a></li>
+               <li>   <a href =overview.html> ALL Pies</a></li>
+               <li>   <a href =contact.html> Connect Us </a></li>
+
+            </ul>
+   </nav>
+    </header>
+<div style ="width :1000px ;margin-left: auto; margin-right: auto;">
+<aside id="leftside">
+    <img src="images\bethanylogo.png"/>
+    <header>
+        <h3 style ="text-align: center;"> Browse our pies</h3>
+    
+
+    </header>
+    <form action="search.html"><input name=" its">
+        <input type="submit">
+    </form>
+    
+</aside>
+<main id = "master">
+  <h1> Contact Us:</h1>
+  <form action="contact.html" method="get" enctype="application/x-www-form-urlencoded">
+    <fieldset ><legend> Contcat information :</legend>
+   <p><label for="custmor name"></label> Your name :<br><input required type="text" name="customer name" id="custmor name"></p>
+   <p> <label for="custmor email"></label> Email :<br><input required type="email" name="customer email" id="customr email"></p>
+   <p> <label for="custmor phone"></label>Your Phone:<br><input required type="tel"pattern="\(\d{3}\) \d{3}- \d{4}" name="customer phone" id="custmor phone"></p>
+    <p>
+    <input type="radio" name="circle button" value="Home">home
+    <input type="radio" name="circle button" value=" Work">work
+    <input type="radio" name="circle button" value=" Cell">cell</p>
+
+   <br> Contact with me: <input type="checkbox"  name ="ok to connect" value="Phone">by phone
+   <input type="checkbox"  name ="contact" value="Email">by email
+   </fieldset>
+   <br>
+   <fieldset ><legend> Feedback information:</legend>
+    <br> Your feedback: <br> <textarea required minlength="10" tabindex ="2"name="feedback comments"  cols="30" rows="3"></textarea>
+   <br>Feedback type: <br><select tabindex ="1" name="feedback type" >
+        <optgroup label="Stores"> 
+        <option value=" site"> Web site </option>
+        <option value=" store"> webstore </option></optgroup>
+        <option value=" Physical"> Physical store</option>
+        <option value=" General"> General feedback </option>
+        </fieldset>
+    </select>
+    
+    <br> Date issue:<br> <input tabindex="3" type="number"  min="1" max ="10" name="severity">
+    <br> Issue date: <br><input tabindex="4" type="date" name="date">
+    <br> Issue time: <br><input tabindex="5" type="time" name=" time">
+
+<br>
+<section id="left">
+  <p><br> <input type="submit" name="send information" value=" send contact"></p></section>
+ 
+  </form>
+    
+
+
+</main>
+<footer>
+    <p> our  shope address is <address>
+        Bethany's pies 555 street 
+    </address> </p>
+    <small>
+&copy;2020 Bathany's pie COPYRIGHT IS SAVED
+    </small>
+</footer>
+
+</div>
+
+
+</body>
+
+
+</html>

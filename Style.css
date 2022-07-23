@@ -62,3 +62,39 @@ padding: 16px;
 color: white;
 font-weight: bold;
 }
+fieldset{
+    border-color:#a593c2;
+    border-width: 5px;
+    background-color:lavender;
+}
+fieldset>legend{
+   background-color:#a593c2;
+   font-size: 20px;
+   border-style: solid;
+
+}
+textarea{
+    border-radius: 12px;
+}
+
+input{
+    border-radius: 12px;
+    
+}
+input:required,textarea:required{
+    border-style: dashed;
+}
+input:focus:invalid{
+    border-color: black;
+}
+input:valid{
+border-color: green;
+}
+input:invalid{
+    border-color:red;
+    }
+    #left{
+        float: right;
+        width :20%;
+    
+    }
