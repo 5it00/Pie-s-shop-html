@@ -1,3 +1,4 @@
+
 body{
     background-color: bisque;
     margin-top: 0%;
@@ -7,11 +8,13 @@ body{
 }
 #myheader{
     background-color:violet;
+   
 }
 nav{
   width: 1000px;  
   height: 50px;
   margin: 0 auto 20px;
+  
 }
 #leftside{
     float: left;
@@ -97,4 +100,67 @@ input:invalid{
         float: right;
         width :20%;
     
+    }
+    .column, .class-row , .column , .class-row2 ,.column , .class-row3{
+        display: flex;
+    }
+    
+.pie{
+padding: 10px;
+border: solid 3px white;
+width: 200px;
+margin: 10px;
+background-color:pink;
+
+}
+button{
+    border-radius: 15px;
+    background-color: #a593c2;
+    padding: 5px;
+    color: white;
+}
+.pie .tittle  {
+font-weight: bold;}
+
+.pie .column div {
+width: 50%;
+}
+.pie .row div {
+    width: 50%;
+    }
+.pie .price{
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media only screen and(min-width:768px) {/*meeeeediiaaaaaaa aint working*/
+        #master{
+            display: flex;
+        }
+        #leftside{
+            margin-left: 2%;
+        }
+        .class-columns{
+            display: flex;
+        }
     }
