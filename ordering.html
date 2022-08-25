@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>welcome sweety</title>
+    <meta charset="utf-8">
+    <meta name = "author" content=" KHITAM SALIM">
+    <meta name = "description" content=" for sweets store">
+    <meta name = "viewpar" content="  wtever">
+    <link rel="icon" type="imge\png" href="favicon.png">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header id = "myheader">
+        <nav>
+            <ul>
+               <li>   <img src="images\pie.png" height="50"/></li>
+               <li>   <a href="index.html"> Home</a></li>
+               <li>   <a href =overview.html> ALL Pies</a></li>
+               <li>   <a href =contact.html> Connect Us </a></li>
+
+            </ul>
+   </nav>
+    </header>
+<div style ="width :1000px ;margin-left: auto; margin-right: auto;">
+<aside id="leftside">
+    <img src="images\bethanylogo.png"/>
+    <header>
+        <h3 style ="text-align: center;"> Browse our pies</h3>
+    
+
+    </header>
+    <form action="search.html"><input name=" its">
+        <input type="submit">
+    </form>
+    <div class ="pie">
+        <img src=""/>
+        <div class="column">
+            <div class ="title"></div>
+            <div class = "price"></div>
+        </div>
+        <p class ="desc"></p>
+    </div>
+</aside>
+<main id = "master">
+  <h1> Order page :</h1>
+  <form action="http://127.0.0.1:5500/order.html" method="post" enctype="application/x-www-form-urlencoded">
+    <fieldset id ="ok"><legend id="ok2"> Order information :</legend>
+   <p><label for="first name"></label> first name :<br><input required type="text" name="customer name" id="custmor name"></p>
+   <p> <label for="last  name"></label> last name :<br><input required type="text" name="customer last name" id="customr last name"></p>
+   <p> <label for="address "></label>Your address :<br><input required type="text" name="customer address" id="custmor address"></p>
+   Postal code: <br><select tabindex ="1" name="feedback type" >
+        <optgroup label="Stores"> 
+            <option value =""selected> [select one]</option>
+        <option value=" Amarica">  Amarica </option>
+        <option value=" Africa"> Africa </option></optgroup>
+        <option value=" Asia">  Asia</option>
+        <option value=" Europe"> Europe  </option><br></select>
+       <br> <br> Your feedback: <br> 
+    <textarea required minlength="10" tabindex ="2"name="feedback comments"  cols="30" rows="3"></textarea>
+<br><br>Contact with me: <input type="checkbox"  name ="ok to connect" value="Phone">by phone
+   <input type="checkbox"  name ="contact" value="Email">by email
+   <br>
+   <section id="left">
+    <input type="submit" name="send information" value=" order">
+    <input type="reset" name="reset information" value=" reset">
+</section>
+   
+</fieldset>
+
+  </form>
+    
+
+
+</main>
+<footer>
+    <p> our  shope address is <address>
+        Bethany's pies 555 street 
+    </address> </p>
+    <small>
+&copy;2020 Bathany's pie COPYRIGHT IS SAVED
+    </small>
+</footer>
+
+</div>
+<script>
+   window.addEventListener("DOMContentLoaded",function(e){ 
+
+    const order =localStorage.getItem("order");
+    if(order){
+        const pieorder= JSON.parse(order);
+        const pie = document.querySelector(".pie");
+         const title=   pie.querySelector(".title");
+        const price=    pie.querySelector(".price");
+         const desc=   pie.querySelector(".desc");
+         title.innerText=pieorder.title;
+         price.innerText=pieorder.price;
+         desc.innerText=pieorder.desc;
+         const img = pie.querySelector("img");
+         img.setAttribute("src",'images/${pieorder.id}.jpg');
+         img.setAttribute("alt",pieorder.title); 
+  }
+   });
+</script>
+
+</body>
+
+
+</html>

@@ -37,7 +37,7 @@
 <main id = "master">
   <h1> Contact Us:</h1>
   <form action="contact.html" method="get" enctype="application/x-www-form-urlencoded">
-    <fieldset ><legend> Contcat information :</legend>
+    <fieldset  class ="input"><legend> Contcat information :</legend>
    <p><label for="custmor name"></label> Your name :<br><input required type="text" name="customer name" id="custmor name"></p>
    <p> <label for="custmor email"></label> Email :<br><input required type="email" name="customer email" id="customr email"></p>
    <p> <label for="custmor phone"></label>Your Phone:<br><input required type="tel"pattern="\(\d{3}\) \d{3}- \d{4}" name="customer phone" id="custmor phone"></p>
@@ -54,6 +54,7 @@
     <br> Your feedback: <br> <textarea required minlength="10" tabindex ="2"name="feedback comments"  cols="30" rows="3"></textarea>
    <br>Feedback type: <br><select tabindex ="1" name="feedback type" >
         <optgroup label="Stores"> 
+            <option value =""selected> [select one]</option>
         <option value=" site"> Web site </option>
         <option value=" store"> webstore </option></optgroup>
         <option value=" Physical"> Physical store</option>

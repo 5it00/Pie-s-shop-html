@@ -8,7 +8,7 @@ body{
 }
 #myheader{
     background-color:violet;
-   
+   width: 100%;
 }
 nav{
   width: 1000px;  
@@ -76,12 +76,25 @@ fieldset>legend{
    border-style: solid;
 
 }
+#ok{
+    border-color:white;
+    border-width: 10px;
+    background-color:pink;
+}
+#ok>#ok2{
+    background-color:white;
+    font-size: 20px;
+    border-style: solid;
+ 
+ }
+
 textarea{
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
 input{
     border-radius: 12px;
+    padding: 5px;
     
 }
 input:required,textarea:required{
@@ -99,8 +112,10 @@ input:invalid{
     #left{
         float: right;
         width :20%;
+      
     
     }
+   
     .column, .class-row , .column , .class-row2 ,.column , .class-row3{
         display: flex;
     }
@@ -153,7 +168,7 @@ width: 50%;
 
 
 
-    @media only screen and(min-width:768px) {/*meeeeediiaaaaaaa aint working*/
+    @media only screen and(min-width:1000px) {/*meeeeediiaaaaaaa aint working*/
         #master{
             display: flex;
         }
